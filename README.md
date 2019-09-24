@@ -9,5 +9,8 @@ const fillArray = (rows, columns, fill) => {
 }
 
 fillArray(3,3,0) => [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ]
+
+repeat(str,x) => {return Array(x+1).join(str) }
+
    
 
