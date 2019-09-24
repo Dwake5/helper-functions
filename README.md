@@ -16,5 +16,7 @@ const repeat = (str,x) => {return Array(x+1).join(str) }
 
 repeat('Hello ', 4) => 'Hello Hello Hello Hello '
 
-   
+## Sort an array by numbers
+
+x.sort(function(a, b) { return a > b ? 1 : -1});
 
