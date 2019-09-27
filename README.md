@@ -20,3 +20,11 @@ repeat('Hello ', 4) => 'Hello Hello Hello Hello '
 
 x.sort(function(a, b) { return a > b ? 1 : -1});
 
+## Efficient fibonacci sequence
+
+const fib(n) => {
+  let arr = [1, 1];
+  for(let i = 0; i <= n; i++) {
+    arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+  }
+}
