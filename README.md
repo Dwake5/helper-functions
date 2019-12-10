@@ -31,8 +31,8 @@ const fib(n) => {
 
 ## Sum numbers from X to Y 
 
-const addFromXtoY = (x,y) => {
+const sumFromXtoY = (x,y) => {
   return (y ** 2 - x ** 2 + y + x)/2
 }
 
-addFromXtoY(1,10) => 55
+sumFromXtoY(1,10) => 55
