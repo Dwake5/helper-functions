@@ -28,3 +28,11 @@ const fib(n) => {
     arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
   }
 }
+
+## Sum numbers from X to Y 
+
+const addFromXtoY = (x,y) => {
+  return (y**2 - x**2 + y + x)/2
+}
+
+addFromXtoY(1,10) => 55
