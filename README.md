@@ -40,18 +40,32 @@ sumFromXtoY(1,10) => 55
 ## Pull from a weighted array
 
 function selectFromWeightedArray(arr) {
+
     let totalWeight = 0, itemWeight = 0
+    
     for (i = 0; i < arr.length; i++) {
+    
         totalWeight += arr[i];
+        
     }
+    
     let random = Math.floor(Math.random() * totalWeight);
+    
     for (i = 0; i < arr.length; i++) {
+    
         itemWeight += arr[i];
+        
         if (random < itemWeight) {
+        
           console.log(arr[i])
+          
             return(arr[i]);
+            
         }
+        
     }
+    
 }
+
 // If given an array like [7,2,1] will return 7, 70% of the time, because the total weight is 10. 
 // Likewise for [1,2,3], 2 will be returned 1/3rd of the time
