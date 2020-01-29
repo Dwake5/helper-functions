@@ -67,5 +67,5 @@ function selectFromWeightedArray(arr) {
     
 }
 
-// If given an array like [7,2,1] will return 7, 70% of the time, because the total weight is 10. 
-// Likewise for [1,2,3], 2 will be returned 1/3rd of the time
+If given an array like [7,2,1] will return 7, 70% of the time, because the total weight is 10. 
+Likewise for [1,2,3], 2 will be returned 1/3rd of the time
