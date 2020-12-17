@@ -39,7 +39,7 @@ sumFromXtoY(1,10) => 55
 
 ## Pull from a weighted array
 
-function selectFromWeightedArray(arr) {
+  function selectFromWeightedArray(arr) {
 
     let totalWeight = 0, itemWeight = 0
     
@@ -65,7 +65,7 @@ function selectFromWeightedArray(arr) {
         
     }
     
-}
+  }
 
 If given an array like [7,2,1] will return 7, 70% of the time, because the total weight is 10. 
 Likewise for [1,2,3], 2 will be returned 1/3rd of the time.
@@ -81,7 +81,7 @@ const objectMap = arr =>
 
 ## Is it a prime number
 
-const isNumberPrime = n => {
+  const isNumberPrime = n => {
     if (n === 1) return false
     
     for (let x = 2; x <= Math.sqrt(n); x++) {
@@ -91,4 +91,4 @@ const isNumberPrime = n => {
     }
     
     return true;    
-}
+  }
