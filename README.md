@@ -79,7 +79,7 @@ const objectMap = arr =>
   return obj
 },{})
 
-## Is it a prime number
+## Is it a Prime Number
 
 const isNumberPrime = n => {
 
@@ -90,10 +90,15 @@ const isNumberPrime = n => {
   if (n % 2 === 0) return false
   
   for (let x = 3; x <= Math.sqrt(n); x+=2) {
+  
     if(n % x === 0) {
+    
       return false;
+      
     }
+    
   }
   
-  return true;   
+  return true;  
+  
 } 
