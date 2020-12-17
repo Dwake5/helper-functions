@@ -81,14 +81,16 @@ const objectMap = arr =>
 
 ## Is it a prime number
 
-  const isNumberPrime = n => {
-    if (n === 1) return false
-    
-    for (let x = 2; x <= Math.sqrt(n); x++) {
-      if(n % x === 0) {
-        return false;
-      }
+const isNumberPrime = n => {
+  if (n <= 1) return false
+  if (n === 2) return true
+  if (n % 2 === 0) return false
+  
+  for (let x = 3; x <= Math.sqrt(n); x+=2) {
+    if(n % x === 0) {
+      return false;
     }
-    
-    return true;    
   }
+  
+  return true;   
+} 
