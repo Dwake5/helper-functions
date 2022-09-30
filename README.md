@@ -39,36 +39,20 @@ sumFromXtoY(1,10) => 55
 
 ## Pull from a weighted array
 
-  function selectFromWeightedArray(arr) {
+  const getIndexFromWeightedArray = () => {
+  const array = [1, 7, 2];
+  const arrayTotal = array.reduce((a, b) => a + b);
+  let randomNumber = Math.random() * arrayTotal;
 
-    let totalWeight = 0, itemWeight = 0
-    
-    for (i = 0; i < arr.length; i++) {
-    
-        totalWeight += arr[i];
-        
-    }
-    
-    let random = Math.floor(Math.random() * totalWeight);
-    
-    for (i = 0; i < arr.length; i++) {
-    
-        itemWeight += arr[i];
-        
-        if (random < itemWeight) {
-        
-          console.log(arr[i])
-          
-            return(arr[i]);
-            
-        }
-        
-    }
-    
+  let totalTraversed = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (randomNumber < array[i] + totalTraversed) return i + 1;
+    totalTraversed += array[i];
   }
+};
 
-If given an array like [7,2,1] will return 7, 70% of the time, because the total weight is 10. 
-Likewise for [1,2,3], 2 will be returned 1/3rd of the time.
+In this example note that the array = 10, when calling this function the 0th index would be returned 10% of the time, 1st 70% and 2nd 20%.
+This can be used with any length array and any numbers. 1 is added here as this was used for weighted dice. 
 
 
 ## Create object with amount of times keys appear in array
