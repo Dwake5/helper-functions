@@ -40,14 +40,21 @@ sumFromXtoY(1,10) => 55
 ## Pull from a weighted array
 
   const getIndexFromWeightedArray = () => {
+  
   const array = [1, 7, 2];
+  
   const arrayTotal = array.reduce((a, b) => a + b);
+  
   let randomNumber = Math.random() * arrayTotal;
 
   let totalTraversed = 0;
+  
   for (let i = 0; i < array.length; i++) {
+  
     if (randomNumber < array[i] + totalTraversed) return i + 1;
+    
     totalTraversed += array[i];
+    
   }
 };
 
